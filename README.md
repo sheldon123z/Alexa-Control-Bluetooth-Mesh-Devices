@@ -10,9 +10,21 @@ The original repository was created under a company-managed account, which is wh
 
 This project is **archived and no longer maintained**. It is kept public for reference and portfolio purposes only. No further updates or support are provided.
 
+## Demo video
+
+A 4-minute-35-second walkthrough of the system in action: provisioning a Bluetooth mesh light, then controlling it by voice through Amazon Alexa.
+
+[![Demo video thumbnail](./images/video_thumbnail.jpg)](https://v.youku.com/v_show/id_XNDI0NjU4NTU1Mg==.html)
+
+▶ [**Watch the demo video on Youku**](https://v.youku.com/v_show/id_XNDI0NjU4NTU1Mg==.html) (4:35)
+
+The video is hosted on Youku rather than stored in this repository, to keep the repository small. Click the thumbnail to play it.
+
 ---
 
 ## Table of Content
+[About this repository](#about-this-repository)
+[Demo video](#demo-video)
 [Project Background:](#project-background)
   - [Project Preparation:](#project-preparation)
 
