@@ -1,4 +1,18 @@
-# Table of Content
+# Alexa Control Bluetooth Mesh Devices
+
+Control Bluetooth mesh devices with Amazon Alexa via a cloud-to-cloud approach: Amazon Echo Plus 2 → Alexa Skill → AWS Lambda → AWS IoT Core → ESP32 (AWS FreeRTOS) → Bluetooth mesh network.
+
+## About this repository
+
+This project was developed by **[Sheldon Zheng (郑晓东)](https://github.com/sheldon123z)** as an intern project at **Silicon Labs** in 2019.
+
+The original repository was created under a company-managed account, which is why the commit history carries a different author name. The code was authored and owned by Sheldon Zheng; the repository was later moved to a personal account and detached from the original fork network. This copy is the standalone, canonical version.
+
+This project is **archived and no longer maintained**. It is kept public for reference and portfolio purposes only. No further updates or support are provided.
+
+---
+
+## Table of Content
 [Project Background:](#project-background)
   - [Project Preparation:](#project-preparation)
 
@@ -148,7 +162,7 @@ In this section, the technical details below will be introduced.
 
 sample codes, including lambda function, Alexa smart home skill, ESP32 freeRTOS application, and the codes of the Bluetooth Mesh provisioner (based on EFR32BG13) will also be explained.  
 
-However, because of the limited length of this article, if the reader wants to replicate this project, please read the section of [Replication the project](#replication-the-project) for the step by step guidance, and access the GitHub page: [Alexa Control Bluetooth Mesh Devices](https://github.com/ChengYuan-CY/Alexa-Control-Bluetooth-Mesh-Devices) and find the mentioned packages accordingly.
+However, because of the limited length of this article, if the reader wants to replicate this project, please read the section of [Replication the project](#replication-the-project) for the step by step guidance, and access the GitHub page: [Alexa Control Bluetooth Mesh Devices](https://github.com/sheldon123z/Alexa-Control-Bluetooth-Mesh-Devices) and find the mentioned packages accordingly.
 
 ### Alexa Smart Home Skill
 Alexa smart home skill interface is designed for controlling smart home devices using Amazon Echo series smart speaker by Amazon. In this project, an Echo plus 2 was utilized to receive the voice command and transmit the voice command to the Alexa server.
@@ -767,7 +781,7 @@ The code for your smart home skill is hosted as a Lambda function on AWS. AWS La
 </br>
 
 Regarding to the lambda function, we take the *Alexa Smart Home skill sample* released by Amazon as starting point, you can access it from the repository [skill-sample-python-smarthome-switch](https://github.com/alexa/skill-sample-python-smarthome-switch). 
-And also you can just reuse the lambda function we have implemented for this project, the zip package ***alexa-control-btmesh-lambda.zip*** is included in the sub directory and also you can get it from the [github](https://github.com/ChengYuan-CY/Alexa-Control-Bluetooth-Mesh-Devices/tree/master/lambda_function).
+And also you can just reuse the lambda function we have implemented for this project, the zip package ***alexa-control-btmesh-lambda.zip*** is included in the sub directory and also you can get it from the [github](https://github.com/sheldon123z/Alexa-Control-Bluetooth-Mesh-Devices/tree/master/lambda_function).
 
 * Runtime = Python 3.7
 * Code entry type = select the "Upload a .ZIP file" (the Alexa skill package)
@@ -1002,7 +1016,7 @@ The esp32 will parse and forward the received MQTT message to the bluetooth prov
 ```
 ### Create the Bluetooth Mesh network
 #### Build EFR32BG13 embedded provisioner program
-a.	Download the [provisioner project](https://github.com/ChengYuan-CY/Alexa-Control-Bluetooth-Mesh-Devices/tree/master/BluetoothMeshProvisioner).
+a.	Download the [provisioner project](https://github.com/sheldon123z/Alexa-Control-Bluetooth-Mesh-Devices/tree/master/BluetoothMeshProvisioner).
 b.	Open the project in simplicity studio, build, flash to BG13 board
 
 #### Build MG21 Bluetooth mesh light/switch/sensor/sensor monitor program
